@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+    <h1>Current Time</h1>
+    <div id="current-time"></div>
+
+    <div class="create-alarm">
+        <h4>Set Alarm</h4>
+        <div class="form-actions">
+            <form>
+                <select name="day" id="day">
+                    <option value="0">Sunday</option>
+                    <option value="1">Monday</option>
+                    <option value="2">Tuesday</option>
+                    <option value="3">Wednesday</option>
+                    <option value="4">Thursday</option>
+                    <option value="5">Friday</option>
+                    <option value="6">Saturday</option>
+                </select>
+                <input type="number" name="hour" placeholder="Enter hours" min="0" max="12" required />
+                <input type="number" name="min" min="0" max="60" placeholder="Enter minutes" required />
+              <input type="number" name="sec" min="0" max="60"  placeholder="Enter seconds" required />
+              <select name="zone" required>
+                <option value="" selected disabled>Zone</option>
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+              </select>
+            </div>
+            <br>
+            <button>Submit</button>
+            </form>
+
+        </div>
+
+    </div>
+
+    </div>
+    <div id="active-alarm">
+        <div id="alarm-text"></div>
+        <button id="clear-alarm">Clear Alarm</button>
+      </div>
+      <audio id="alarm-audio"></audio>
+
+  
+    
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
